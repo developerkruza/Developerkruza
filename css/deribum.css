@@ -1,0 +1,198 @@
+:root {
+    --upper-color: #060e6c; /*Consultant canvas color*/
+    --upper-width: 70px; /*Consultant canvas width*/
+    --upper-border-left-radius: 10px; /*Consultant canvas border-radius left*/
+    --upper-border-right-radius: 10px; /*Consultant canvas border-radius right*/
+    --chat-color: #fff; /*Chat color*/
+    --client-message-color: #32CD30; /*Client message*/
+    --manager-message-color: #dbe0db; /*Manager message*/
+    --global-border-radius: 10px; /*Global Border Radius*/
+    --margin-top-message: 20px; /*align across messages*/
+    --avatar-consultant: 50px; /*side of a square of consultant's avatar*/
+    --consultant-name-width: 80px; /*width of consultant name canvas*/
+    --consultant-name-height: 25px; /*height of consultant name canvas*/
+    --consultant-name-font-size: 18px; /*name size of consultant name*/
+    --consultant-post-width: 80px; /*width of consultant post canvas*/
+    --consultant-post-height: 25px; /*height of consultant post canvas*/
+    --consultant-post-font-size: 14px; /*post size of consultant post*/
+    --consultant-phone-width: 45px; /*width of consultant phone canvas*/
+    --consultant-phone-height: 45px; /*height of consultant phone canvas*/
+    --canvas-top-consultant-call-dropmenu-height: 100px; /*recall dropmenu height*/
+    --canvas-top-consultant-call-dropmenu-bottom: 465px; /*bottom*/
+
+}
+
+.canvas {
+    -webkit-box-shadow: 0px 0px 19px -2px #383838; 
+    box-shadow: 0px 0px 19px -2px #383838;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    right: 25px;
+    bottom: 0px;
+}
+
+.canvas-bottom {
+    position: inherit;
+    width: inherit;
+    bottom: 50px;
+}
+
+.canvas-bottom-additive {
+    position: inherit;
+    width: inherit;
+    bottom: 0px;
+    padding: 5px;
+}
+
+.canvas-top-consultant {
+    position: inherit;
+    width: inherit;
+    bottom: 400px;
+    background-color: var(--upper-color);
+    height: var(--upper-width);
+    border-top-left-radius: var(--upper-border-left-radius);
+    border-top-right-radius: var(--upper-border-right-radius);
+    color: white;
+}
+
+.canvas-top-consultant-avatar {
+    position: inherit;
+    width: var(--avatar-consultant);
+    height: var(--avatar-consultant);
+    bottom: 400px;
+    border-radius: 25%;
+    right: 260px;
+    bottom: 410px;
+}
+
+.canvas-top-consultant-name {
+  color: white;
+  position: inherit;
+  width: var(--consultant-name-width);
+  height: var(--consultant-name-height);
+  font-size: var(--consultant-name-font-size);
+  right: 170px;
+  bottom: 435px;
+}
+
+.canvas-top-consultant-post {
+  color: #9b9a9a;
+  position: inherit;
+  width: var(--consultant-post-width);
+  height: var(--consultant-post-height);
+  font-size: var(--consultant-post-font-size);
+  right: 170px;
+  bottom: 415px;
+}
+
+.canvas-top-consultant-call {
+  position: inherit;
+  width: var(--consultant-phone-width);
+  height: var(--consultant-phone-height);
+  font-size: var(--consultant-phone-font-size);
+  right: 40px;
+  bottom: 415px;
+  border-radius: 50%;
+  background-image: url("system/telephone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  background-color: rgb(111, 255, 130);
+  border: 1px solid #ededed;
+}
+
+.canvas-top-consultant-call-dropmenu {
+  position: inherit;
+  width: inherit;
+  height: var(--canvas-top-consultant-call-dropmenu-height);
+  bottom: var(--canvas-top-consultant-call-dropmenu-bottom);
+  background-color: #e6e3e3;
+  color: black;
+  border-radius: 5px;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ededed; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d3d2d2; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  .chat-main {
+    width: 360px;
+    position: inherit;
+    width: inherit;
+    height: 316px;
+    bottom: 84px;
+    background-color: var(--chat-color);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+
+  .client-message {
+    background-color: var(--client-message-color);
+    padding: 5%;
+    color: white;
+    border-radius: var(--global-border-radius);
+    margin-top: var(--margin-top-message);
+    max-width: 50%;
+    display: block;
+    margin-left: 50%;
+  }
+
+  .manager-message {
+    background-color: var(--manager-message-color);
+    padding: 5%;
+    color: #333;
+    border-radius: var(--global-border-radius);
+    margin-top: var(--margin-top-message);
+    max-width: 50%;
+    display: block;
+  }
+
+  /**** SMILES AND FILES ****/
+
+  .smiles-canvas {
+    position: relative;
+    margin: 0px 0px 10px 5px;
+  }
+
+  .individ-smile {
+    margin: 0px 0px 0px 10px;
+  }
+
+  .smile-dropup {
+    -webkit-box-shadow: 0px 0px 19px -2px #383838; 
+    box-shadow: 0px 0px 19px -2px #383838;
+    position: absolute;
+    width: 180px;
+    height: 220px;
+    background-color: white;
+    bottom: 20;
+    padding: 10px;
+  }
+
+  .smile {
+    display: inline;
+    font-size: 20px;
+  }
